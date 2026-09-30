@@ -22,15 +22,15 @@ const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   };
 
   if (reduceMotion.matches) {
-    useImage("assets/logo.webp");
+    useImage("assets/logo.webp?v=3");
     return;
   }
   if (isSafari || !canWebm) {
-    useImage("assets/logo-beso.webp");
+    useImage("assets/logo-beso.webp?v=3");
     return;
   }
-  video.addEventListener("error", () => useImage("assets/logo-beso.webp"), { once: true });
-  video.querySelector("source")?.addEventListener("error", () => useImage("assets/logo-beso.webp"), { once: true });
+  video.addEventListener("error", () => useImage("assets/logo-beso.webp?v=3"), { once: true });
+  video.querySelector("source")?.addEventListener("error", () => useImage("assets/logo-beso.webp?v=3"), { once: true });
   const p = video.play();
   // Chrome pausa los videos en pestañas ocultas: al volver, retomarlo
   document.addEventListener("visibilitychange", () => {
@@ -40,7 +40,7 @@ const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   // AbortError solo significa que un pause() interrumpió el arranque: no es un fallo del video
   if (p && p.catch) p.catch((err) => {
     if (err && err.name === "AbortError") return;
-    useImage("assets/logo-beso.webp");
+    useImage("assets/logo-beso.webp?v=3");
   });
 })();
 

@@ -248,14 +248,27 @@ a { color: inherit; text-underline-offset: 0.2em; text-decoration-thickness: 2px
   width: min(100%, 560px, calc((100dvh - var(--nav-h) - 60px) * 0.82));
   aspect-ratio: 839 / 1003;
 }
-.king__float { width: 100%; height: 100%; animation: king-float 7s ease-in-out infinite; }
+.king__float { position: relative; isolation: isolate; width: 100%; height: 100%; animation: king-float 7s ease-in-out infinite; }
 .king__tilt {
   width: 100%;
   height: 100%;
   transform: rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
   transform-style: preserve-3d;
   transition: transform 0.5s var(--ease-out);
-  filter: drop-shadow(0 26px 30px rgb(51 69 47 / 0.22));
+}
+/* Sombra fija sobre el "piso": no depende del contorno animado, así no parpadea en el beso */
+.king__float::after {
+  content: "";
+  position: absolute;
+  left: 14%;
+  right: 14%;
+  bottom: -3%;
+  height: 7%;
+  z-index: -1;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, rgb(51 69 47 / 0.28), transparent);
+  filter: blur(6px);
+  pointer-events: none;
 }
 .king__media {
   width: 100%;
