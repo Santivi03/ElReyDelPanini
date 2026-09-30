@@ -559,10 +559,7 @@ a { color: inherit; text-underline-offset: 0.2em; text-decoration-thickness: 2px
   gap: 6px;
   padding: 22px 18px 20px;
   border-radius: var(--r-card);
-  background:
-    radial-gradient(closest-side at 50% 55%, rgb(255 214 110 / 0.14), transparent 80%),
-    #1B2419;
-  box-shadow: 0 20px 36px -24px rgb(27 36 25 / 0.9);
+  background: #1B2419;
   overflow: hidden;
   isolation: isolate;
 }
@@ -576,20 +573,15 @@ a { color: inherit; text-underline-offset: 0.2em; text-decoration-thickness: 2px
   line-height: 1;
   color: #FFF7DE;
   text-shadow:
-    0 0 2px #fff,
-    0 0 8px #FFD66E,
-    0 0 18px #F2B63C,
-    0 0 34px rgb(242 182 60 / 0.6);
+    0 0 1px #FFF7DE,
+    0 0 6px rgb(255 214 110 / 0.75);
 }
 .neon__top { font-size: clamp(1rem, 1.6vw, 1.3rem); transform: rotate(-6deg); }
 .neon__bottom { font-size: clamp(0.85rem, 1.2vw, 1rem); letter-spacing: 0.22em; }
 .neon__hand {
   width: min(78%, 240px);
   height: auto;
-  filter:
-    drop-shadow(0 0 1.5px #fff)
-    drop-shadow(0 0 6px #FFD66E)
-    drop-shadow(0 0 16px rgb(242 182 60 / 0.75));
+  filter: drop-shadow(0 0 5px rgb(255 214 110 / 0.7));
 }
 .js .neon.is-on .neon__top,
 .js .neon.is-on .neon__hand,
