@@ -1,0 +1,6 @@
+# Material descargado de Instagram para armar la web (no lo usa la página)
+assets/ig/
+
+# Configuración local
+.claude/
+.impeccable/

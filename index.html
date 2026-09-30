@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>El Rey Del Panini · Autentici panini italiani</title>
+  <meta name="description" content="Panini italianos y pizzas New York y Detroit. Viernes y sábados de 20 a 00 h en La Mala, Av. del Libertador 3883, Arco 4, Paseo de La Infanta.">
+  <meta name="theme-color" content="#465E46">
+  <meta property="og:title" content="El Rey Del Panini">
+  <meta property="og:description" content="Autentici panini italiani. Viernes y sábados de 20 a 00 h en La Mala, Av. del Libertador 3883.">
+  <meta property="og:image" content="assets/logo.png">
+  <meta property="og:type" content="restaurant">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,600;1,700;1,800&family=Fira+Sans:wght@400;500;600&family=Fraunces:opsz,wght,SOFT,WONK@9..144,600..900,0..100,0..1&display=swap">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+  <link rel="preload" as="video" href="assets/logo-beso.webm" type="video/webm">
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "El Rey Del Panini",
+    "servesCuisine": ["Italiana", "Panini", "Pizza"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. del Libertador 3883, Arco 4 (La Mala, Paseo de La Infanta)",
+      "addressLocality": "Ciudad Autónoma de Buenos Aires",
+      "addressCountry": "AR"
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Friday", "Saturday"],
+      "opens": "20:00",
+      "closes": "00:00"
+    }],
+    "sameAs": ["https://www.instagram.com/elreydelpanini/"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#carta">Saltar a la carta</a>
+
+  <div class="gingham gingham--top" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <a class="nav__brand" href="#top" aria-label="El Rey Del Panini, volver arriba">
+      <img class="nav__logo" src="assets/logo-mark.webp" alt="" width="44" height="53">
+      <span class="nav__word">El Rey Del Panini</span>
+    </a>
+    <nav class="nav__links" aria-label="Secciones">
+      <a href="#carta">Carta</a>
+      <a href="#armado" class="hide-sm">Así se arma</a>
+      <a href="#donde">Dónde</a>
+      <a class="nav__ig" href="https://www.instagram.com/elreydelpanini/" target="_blank" rel="noopener" aria-label="Instagram de El Rey Del Panini">
+        <i class="ph-bold ph-instagram-logo" aria-hidden="true"></i>
+      </a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="hero__stage" id="stage">
+        <div class="king" id="king">
+          <div class="king__float">
+            <div class="king__tilt" id="kingTilt">
+              <video class="king__media" id="kingVideo" autoplay muted loop playsinline preload="auto"
+                     width="720" height="860" aria-label="Logo animado de El Rey Del Panini: el rey hace el gesto del beso del chef">
+                <source src="assets/logo-beso.webm" type="video/webm">
+              </video>
+              <img class="king__media king__fallback" id="kingImg" src="assets/logo.webp" alt="Logo de El Rey Del Panini: un rey con corona haciendo el gesto del beso del chef" width="800" height="956" hidden>
+            </div>
+          </div>
+          <div class="badge" aria-hidden="true">
+            <svg class="badge__ring" viewBox="0 0 200 200">
+              <defs><path id="ring" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0"/></defs>
+              <text><textPath href="#ring" startOffset="0">Autentici panini italiani · Autentici panini italiani ·</textPath></text>
+            </svg>
+            <i class="ph-fill ph-crown-simple badge__icon"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__copy">
+        <h1 class="hero__title" id="hero-title">Autentici <em>panini</em> italiani</h1>
+        <p class="hero__sub">Viernes y sábados de 20 a 00 h. En La Mala, Av. del Libertador 3883, Arco 4.</p>
+        <div class="hero__ctas">
+          <a class="btn btn--solid" href="#carta">Ver la carta <i class="ph-bold ph-arrow-down" aria-hidden="true"></i></a>
+          <a class="btn btn--line" href="https://www.google.com/maps/dir/?api=1&destination=Paseo+de+la+Infanta%2C+Av.+del+Libertador+3883%2C+Buenos+Aires" target="_blank" rel="noopener">Cómo llegar <i class="ph-bold ph-arrow-up-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>Mortadela con pistachos</span><i class="ph-fill ph-crown-simple"></i>
+        <span>Stracciatella</span><i class="ph-fill ph-crown-simple"></i>
+        <span>Porchetta</span><i class="ph-fill ph-crown-simple"></i>
+        <span>Pizza Detroit</span><i class="ph-fill ph-crown-simple"></i>
+        <span>New York Pizza</span><i class="ph-fill ph-crown-simple"></i>
+        <span>Cornettos</span><i class="ph-fill ph-crown-simple"></i>
+        <span>Aperol Spritz</span><i class="ph-fill ph-crown-simple"></i>
+        <span>Mortadela con pistachos</span><i class="ph-fill ph-crown-simple"></i>
+        <span>Stracciatella</span><i class="ph-fill ph-crown-simple"></i>
+        <span>Porchetta</span><i class="ph-fill ph-crown-simple"></i>
+        <span>Pizza Detroit</span><i class="ph-fill ph-crown-simple"></i>
+        <span>New York Pizza</span><i class="ph-fill ph-crown-simple"></i>
+        <span>Cornettos</span><i class="ph-fill ph-crown-simple"></i>
+        <span>Aperol Spritz</span><i class="ph-fill ph-crown-simple"></i>
+      </div>
+    </div>
+
+    <!-- EL GESTO -->
+    <section class="gesto" aria-labelledby="gesto-title">
+      <figure class="gesto__photos">
+        <img class="gesto__main reveal" src="assets/img/beso.webp" alt="Un cliente con la camiseta de Italia hace el gesto del beso del chef frente al local" width="900" height="1600" loading="lazy">
+      </figure>
+      <div class="gesto__copy">
+        <h2 class="h2" id="gesto-title">El gesto ya lo conocés</h2>
+        <p class="lead">Mortadela con pistachos, stracciatella, porchetta, lomo ahumado. Paninis armados en el mostrador, en focaccia o en pan sin TACC.</p>
+        <ul class="facts">
+          <li><i class="ph-bold ph-grains-slash" aria-hidden="true"></i> Opción sin TACC en paninis</li>
+          <li><i class="ph-bold ph-bread" aria-hidden="true"></i> Pan de focaccia a elección</li>
+          <li><i class="ph-bold ph-pizza" aria-hidden="true"></i> Pizzas New York por porción o entera</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ASI SE ARMA -->
+    <section class="armado" id="armado" aria-labelledby="armado-title">
+      <div class="armado__head">
+        <h2 class="h2 h2--cream" id="armado-title">Así se arma un Clásico</h2>
+        <p class="lead lead--cream">Pasta de pistachos, mortadela con pistachos, stracciatella y oliva, en el mostrador y delante tuyo.</p>
+      </div>
+      <div class="armado__grid">
+        <div class="tile tile--video reveal">
+          <video id="armadoVideo" autoplay muted loop playsinline preload="metadata" poster="assets/video/armado-poster.jpg" width="540" height="958" aria-label="Video: preparación de un panini con pasta de pistachos y fiambres">
+            <source src="assets/video/armado.webm" type="video/webm">
+            <source src="assets/video/armado.mp4" type="video/mp4">
+          </video>
+          <button class="vbtn" id="armadoToggle" type="button" aria-pressed="false" aria-label="Pausar video">
+            <i class="ph-fill ph-pause" aria-hidden="true"></i>
+          </button>
+        </div>
+        <img class="tile tile--a reveal" src="assets/img/pistacho.webp" alt="Pasta de pistachos untada sobre el pan" width="720" height="1278" loading="lazy">
+        <img class="tile tile--b reveal" src="assets/img/fiambre.webp" alt="Fiambres italianos sobre el pan en la tabla de madera" width="720" height="1278" loading="lazy">
+        <img class="tile tile--c reveal" src="assets/img/vino.webp" alt="Copa de vino junto a un panini envuelto en el papel de la casa" width="720" height="1278" loading="lazy">
+      </div>
+    </section>
+
+    <!-- CARTA -->
+    <section class="carta" id="carta" aria-labelledby="carta-title">
+      <div class="gingham" aria-hidden="true"></div>
+      <div class="carta__inner">
+        <aside class="carta__aside">
+          <h2 class="h2" id="carta-title">La carta</h2>
+          <img class="carta__photo reveal" src="assets/img/wrap.webp" alt="Panini envuelto en el papel de El Rey Del Panini, con mortadela y pasta de pistachos" width="720" height="1278" loading="lazy">
+          <div class="promo">
+            <div class="promo__inner">
+              <p class="promo__title">Promos <span>x</span> Aperol</p>
+              <p class="promo__text">Sumá un Aperol Spritz a tu panini o pizza por precio promocional</p>
+              <p class="promo__price">$ 10.000</p>
+            </div>
+          </div>
+          <figure class="neon" role="img" aria-label="Cartel de neón del local: El Rey del Panini y la pizza, con la mano haciendo el beso del chef">
+            <span class="neon__top" aria-hidden="true">El Rey del Panini</span>
+            <img class="neon__hand" src="assets/img/neon-mano.png" alt="" width="396" height="407" loading="lazy">
+            <span class="neon__bottom" aria-hidden="true">y la pizza</span>
+          </figure>
+        </aside>
+
+        <div class="carta__menu">
+          <div class="tabs" role="tablist" aria-label="Secciones de la carta">
+            <button class="tab" role="tab" id="t-panini" aria-controls="p-panini" aria-selected="true">Panini</button>
+            <button class="tab" role="tab" id="t-ny" aria-controls="p-ny" aria-selected="false" tabindex="-1">New York Pizzas</button>
+            <button class="tab" role="tab" id="t-detroit" aria-controls="p-detroit" aria-selected="false" tabindex="-1">Pizza Detroit</button>
+            <button class="tab" role="tab" id="t-papas" aria-controls="p-papas" aria-selected="false" tabindex="-1">Papas fritas</button>
+            <button class="tab" role="tab" id="t-dulce" aria-controls="p-dulce" aria-selected="false" tabindex="-1">Cornettos y dulces</button>
+            <button class="tab" role="tab" id="t-bebidas" aria-controls="p-bebidas" aria-selected="false" tabindex="-1">Bebidas</button>
+          </div>
+
+          <!-- Panini -->
+          <div class="panel" role="tabpanel" id="p-panini" aria-labelledby="t-panini" tabindex="0">
+            <p class="panel__note"><i class="ph-bold ph-grains-slash" aria-hidden="true"></i> Opción sin TACC disponible solo en paninis. Opción pan de focaccia a elección.</p>
+            <ul class="items">
+              <li><h3>Clásico</h3><p>Mortadela con pistachos, stracciatella, pasta de pistachos y oliva.</p></li>
+              <li><h3>Lavoratore</h3><p>Vegetariano. Fetas de queso parmesano, encurtido de berenjenas, tomates secos y oliva.</p></li>
+              <li><h3>Afumicato</h3><p>Lomo ahumado c/ pimienta, pesto de albahaca, tomates secos y mozzarella fiordilatte.</p></li>
+              <li><h3>Corbeta Halcone</h3><p>Porchetta, queso gorgonzola, rúcula y aceite de oliva.</p></li>
+              <li><h3>Doguito</h3><p>Tomates confitados, asadito argentino, morrones asados, cebolla quemada, lechuga, ajíes, mayonesa de chimichurri.</p></li>
+              <li><h3>Metallo</h3><p>Stracciatella, jamón crudo, tomates secos, aceitunas con almendras y aceite de oliva.</p></li>
+              <li class="items__wide">
+                <h3>Libre <small>toppings a elección</small></h3>
+                <ul class="chips">
+                  <li>Parmesano</li><li>Mozzarella fiordilatte</li><li>Stracciatella</li><li>Gorgonzola</li><li>Feta de cabra</li><li>Fontina</li><li>Rúcula</li><li>Tomates secos</li><li>Tomates cherry</li><li>Tomates confitados</li><li>Berenjenas encurtidas</li><li>Morrones asados</li><li>Cebolla quemada</li><li>Lechuga</li><li>Ajíes encurtidos</li><li>Mortadela con pistachos</li><li>Salame picante</li><li>Jamón crudo</li><li>Lomo ahumado</li><li>Porchetta</li><li>Bondiola</li><li>Asadito argentino</li><li>Pulpetines</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <!-- NY -->
+          <div class="panel" role="tabpanel" id="p-ny" aria-labelledby="t-ny" tabindex="0" hidden>
+            <p class="panel__note"><i class="ph-bold ph-pizza" aria-hidden="true"></i> Opción por porción o entera.</p>
+            <ul class="items">
+              <li><h3>Margarita</h3><p>Pizza de mozzarella tradicional con salsa de tomate, queso parmesano y albahaca.</p></li>
+              <li><h3>Peperoni</h3><p>Clásica con salsa de tomates frescos, mozzarella y rodajas de pepperoni con toque picante.</p></li>
+              <li><h3>Mortadela</h3><p>Salsa de tomates frescos, stracciatella, mortadela y crocante de pistachos.</p></li>
+              <li><h3>Cuatro quesos</h3><p>Base de rúcula y un equilibrio justo entre queso parmesano, queso azul, ricota y queso de cabra.</p></li>
+              <li><h3>Hongos</h3><p>Portobelos y champiñones salteados en aceite de hierbas, salsa de tomates, mozzarella y hierbas frescas.</p></li>
+              <li><h3>Bacon</h3><p>Salsa de tomates frescos, mozzarella, panceta crujiente y aceite fresco de limón.</p></li>
+            </ul>
+          </div>
+
+          <!-- Detroit -->
+          <div class="panel" role="tabpanel" id="p-detroit" aria-labelledby="t-detroit" tabindex="0" hidden>
+            <p class="panel__note"><i class="ph-bold ph-squares-four" aria-hidden="true"></i> Masa cuadrada y esponjosa con bordes crocantes. 6 porciones.</p>
+            <ul class="items">
+              <li><h3>Detroit Six Cheese</h3><p>Blend de quesos cheddar, mozzarella y provolone, aceitunas negras y un toque de alioli de pimiento rojo.</p></li>
+              <li><h3>Detroit Veggie</h3><p>Pera caramelizada, mozzarella y queso azul, terminada con miel y un sutil toque de ají molido.</p></li>
+              <li><h3>Detroit Pepperoni</h3><p>Pepperoni, stracciatella, cebolla morada encurtida en zumo de naranja y gremolata fresca.</p></li>
+            </ul>
+          </div>
+
+          <!-- Papas -->
+          <div class="panel" role="tabpanel" id="p-papas" aria-labelledby="t-papas" tabindex="0" hidden>
+            <ul class="items">
+              <li><h3>Papas bravas</h3><p>Papas bastón crujientes con salsa pomodoro semi picante y alioli.</p></li>
+              <li><h3>Papas pico de gallo</h3><p>Papas bastón crujientes con fresca mezcla de tomate, cebolla morada, jalapeños y limón, acompañadas de mousse de palta y cilantro.</p></li>
+              <li><h3>Papas fondue</h3><p>Papas bastón cubiertas con fondue de quesos: provolone, mozzarella y parmesano.</p></li>
+              <li><h3>Papas c/ cheddar y bacon</h3><p>Papas bastón crujientes con cheddar fundido, panceta ahumada crocantes y verdeo.</p></li>
+            </ul>
+          </div>
+
+          <!-- Dulces -->
+          <div class="panel" role="tabpanel" id="p-dulce" aria-labelledby="t-dulce" tabindex="0" hidden>
+            <div class="groups">
+              <div class="group">
+                <h3 class="group__title">Cornettos rellenos</h3>
+                <ul class="names">
+                  <li>Nutella</li><li>Nutella blanca</li><li>Crema de almendras</li><li>Crema y frutos rojos</li><li>Mermelada de damasco</li>
+                </ul>
+              </div>
+              <div class="group">
+                <h3 class="group__title">Extras</h3>
+                <ul class="names">
+                  <li>Kit Kat</li><li>Kinder Bueno</li><li>Chocolinas</li><li>Snicker</li>
+                </ul>
+              </div>
+              <div class="group">
+                <h3 class="group__title">Dulces</h3>
+                <ul class="names">
+                  <li>Cheesecake de frutos rojos</li><li>Brownie</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bebidas -->
+          <div class="panel" role="tabpanel" id="p-bebidas" aria-labelledby="t-bebidas" tabindex="0" hidden>
+            <div class="groups groups--drinks">
+              <div class="group">
+                <h3 class="group__title">Tragos</h3>
+                <ul class="names">
+                  <li>Aperol Spritz</li>
+                  <li>Gin tonic <small>Gordons</small></li>
+                  <li>Vodka con jugo <small>Smirnoff</small></li>
+                  <li>Garibaldi <small>Campari, jugo de naranja y rodajas de naranja</small></li>
+                  <li>Vodka + Speed <small>Smirnoff</small></li>
+                  <li>Vodka Absolut <small>Con jugo o tónica</small></li>
+                  <li>Vodka Absolut <small>Con Speed</small></li>
+                </ul>
+              </div>
+              <div class="group">
+                <h3 class="group__title">Sin alcohol</h3>
+                <ul class="names">
+                  <li>Agua Eco de los Andes <small>Con o sin gas</small></li>
+                  <li>Gaseosa <small>Pepsi, Pepsi Black, Seven Up, Seven Free, Paso de los Toros, Agua Tónica</small></li>
+                  <li>Speed</li>
+                  <li>Stella Artois 0%</li>
+                </ul>
+              </div>
+              <div class="group">
+                <h3 class="group__title">Vinos</h3>
+                <ul class="names">
+                  <li>Intocables Malbec</li><li>Intocables Cabernet</li><li>Altos del Plata Chardonnay</li><li>Altos del Plata Malbec</li><li>Bautismo Blanco Dulce</li><li>Bautismo Malbec</li><li>Bautismo Rosado</li><li>Latitud 33 Malbec</li><li>Latitud 33 Chardonnay</li>
+                </ul>
+              </div>
+              <div class="group">
+                <h3 class="group__title">Medidas</h3>
+                <ul class="names">
+                  <li>Hodlmoser + Speed</li><li>JW Black + Speed</li><li>JW Red + Speed</li>
+                </ul>
+              </div>
+              <div class="group">
+                <h3 class="group__title">Latas y porrones</h3>
+                <ul class="names">
+                  <li>Corona porrón 330cc</li><li>Stella Artois 330cc</li><li>Stella Artois Pure Gold 330cc</li>
+                </ul>
+              </div>
+              <div class="group">
+                <h3 class="group__title">Botellas</h3>
+                <ul class="names">
+                  <li>Fernet 750cc + Coca Cola</li><li>Gordons + Tónica</li><li>Smirnoff + 4 Speed</li>
+                </ul>
+              </div>
+              <div class="group">
+                <h3 class="group__title">Fernetero</h3>
+                <ul class="names">
+                  <li>Fernetero 1lt</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gingham" aria-hidden="true"></div>
+    </section>
+
+    <!-- DONDE -->
+    <section class="donde" id="donde" aria-labelledby="donde-title">
+      <div class="donde__copy">
+        <h2 class="donde__days" id="donde-title">Viernes<br>y sábados</h2>
+        <p class="donde__hours"><i class="ph-bold ph-clock" aria-hidden="true"></i> De 20 a 00 h</p>
+        <address class="donde__addr">
+          <i class="ph-bold ph-map-pin" aria-hidden="true"></i>
+          <span>La Mala<br>Av. del Libertador 3883, Arco 4<br>Paseo de La Infanta, Palermo</span>
+        </address>
+        <a class="btn btn--solid" href="https://www.google.com/maps/dir/?api=1&destination=Paseo+de+la+Infanta%2C+Av.+del+Libertador+3883%2C+Buenos+Aires" target="_blank" rel="noopener">Cómo llegar <i class="ph-bold ph-arrow-up-right" aria-hidden="true"></i></a>
+      </div>
+      <img class="donde__photo reveal" src="assets/img/fachada.webp" alt="La fachada del local: toldo verde con letras crema que dice El Rey Del Panini, revestimiento de madera y el mostrador iluminado" width="720" height="1280" loading="lazy">
+      <div class="donde__map reveal">
+        <iframe title="Mapa: Av. del Libertador 3883, Buenos Aires" src="https://www.google.com/maps?q=Paseo+de+la+Infanta,+Av.+del+Libertador+3883,+Buenos+Aires&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <!-- INSTAGRAM -->
+    <section class="ig" id="instagram" aria-labelledby="ig-title">
+      <div class="ig__head">
+        <h2 class="h2" id="ig-title">Seguinos en Instagram</h2>
+        <a class="ig__handle" href="https://www.instagram.com/elreydelpanini/" target="_blank" rel="noopener">
+          <i class="ph-bold ph-instagram-logo" aria-hidden="true"></i> @elreydelpanini
+        </a>
+      </div>
+      <ul class="ig__strip">
+        <li><a href="https://www.instagram.com/elreydelpanini/" target="_blank" rel="noopener"><img src="assets/img/cocina.webp" alt="El equipo armando paninis detrás del mostrador" width="480" height="640" loading="lazy"></a></li>
+        <li><a href="https://www.instagram.com/elreydelpanini/" target="_blank" rel="noopener"><img src="assets/img/fans.webp" alt="Dos clientes hacen el gesto del beso del chef con sus paninis" width="360" height="640" loading="lazy"></a></li>
+        <li><a href="https://www.instagram.com/elreydelpanini/" target="_blank" rel="noopener"><img src="assets/img/lamala.webp" alt="El cartel de neón de El Rey Del Panini de noche en La Mala, con gente en la puerta" width="361" height="640" loading="lazy"></a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="gingham" aria-hidden="true"></div>
+    <div class="footer__inner">
+      <img class="footer__logo" src="assets/logo.webp" alt="El Rey Del Panini" width="800" height="956" loading="lazy">
+      <div class="footer__cols">
+        <div>
+          <p class="footer__label">Horario</p>
+          <p>Viernes y sábados<br>de 20 a 00 h</p>
+        </div>
+        <div>
+          <p class="footer__label">Dirección</p>
+          <p>La Mala, Av. del Libertador 3883, Arco 4<br>Paseo de La Infanta</p>
+        </div>
+        <div>
+          <p class="footer__label">Instagram</p>
+          <p><a href="https://www.instagram.com/elreydelpanini/" target="_blank" rel="noopener">@elreydelpanini</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 El Rey Del Panini</p>
+      <p class="footer__credit">Hecho por <strong>Santi Viñas</strong></p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
