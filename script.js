@@ -32,7 +32,16 @@ const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   video.addEventListener("error", () => useImage("assets/logo-beso.webp"), { once: true });
   video.querySelector("source")?.addEventListener("error", () => useImage("assets/logo-beso.webp"), { once: true });
   const p = video.play();
-  if (p && p.catch) p.catch(() => useImage("assets/logo-beso.webp"));
+  // Chrome pausa los videos en pestañas ocultas: al volver, retomarlo
+  document.addEventListener("visibilitychange", () => {
+    const v = document.getElementById("kingVideo");
+    if (v && !document.hidden && v.paused) v.play().catch(() => {});
+  });
+  // AbortError solo significa que un pause() interrumpió el arranque: no es un fallo del video
+  if (p && p.catch) p.catch((err) => {
+    if (err && err.name === "AbortError") return;
+    useImage("assets/logo-beso.webp");
+  });
 })();
 
 /* ---------- El rey sigue al puntero ---------- */
