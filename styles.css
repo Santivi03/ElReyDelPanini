@@ -904,6 +904,14 @@ a { color: inherit; text-underline-offset: 0.2em; text-decoration-thickness: 2px
   color: #C9C6A8;
 }
 .footer__bottom p { margin: 0; }
+.footer__credit a {
+  display: inline-block;
+  padding: 10px 0;
+  color: var(--cream);
+  text-decoration-color: rgb(238 233 203 / 0.45);
+  transition: text-decoration-color 0.2s;
+}
+.footer__credit a:hover { text-decoration-color: var(--cream); }
 .footer__credit strong {
   font-family: var(--f-display);
   font-weight: 900;
